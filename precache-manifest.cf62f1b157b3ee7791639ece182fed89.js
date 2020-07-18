@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "612e0d9b476ec7d65a06e8fe5d65e7d3",
+    "revision": "aea5f2791f1a98b7af4e3a38e2e8ca91",
     "url": "/miniature-octo-spork/index.html"
   },
   {
-    "revision": "78427e68dd1a81090c97",
+    "revision": "8342895e888e5e5f8a40",
     "url": "/miniature-octo-spork/static/css/main.48bf5410.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/miniature-octo-spork/static/js/2.7eac866d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "78427e68dd1a81090c97",
-    "url": "/miniature-octo-spork/static/js/main.2c6cc3e0.chunk.js"
+    "revision": "8342895e888e5e5f8a40",
+    "url": "/miniature-octo-spork/static/js/main.50fc6ee5.chunk.js"
   },
   {
     "revision": "0020b7b6a049b793ec7a",

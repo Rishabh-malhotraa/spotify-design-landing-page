@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/miniature-octo-spork/precache-manifest.42663db4e2b7bc02dcdfa719530b1c68.js"
+  "/miniature-octo-spork/precache-manifest.cf62f1b157b3ee7791639ece182fed89.js"
 );
 
 self.addEventListener('message', (event) => {
