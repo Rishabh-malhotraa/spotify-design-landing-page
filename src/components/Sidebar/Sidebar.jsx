@@ -4,7 +4,6 @@ import { bubble as Menu } from 'react-burger-menu';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import HomeIcon from '@material-ui/icons/Home';
 import EventIcon from '@material-ui/icons/Event';
-import LibraryBooksIcon from '@material-ui/icons/LibraryBooks';
 import CodeIcon from '@material-ui/icons/Code';
 import GroupIcon from '@material-ui/icons/Group';
 import BookIcon from '@material-ui/icons/Book';
@@ -21,7 +20,9 @@ const Navbar = () => {
         right
         pageWrapId={'page-wrap'}
         width={'280px'}
-        customBurgerIcon={<img src={require('../../assets/menu.svg')} />}
+        customBurgerIcon={
+          <img alt="menu-icon" src={require('../../assets/menu.svg')} />
+        }
       >
         <main id="page-wrap"></main>
         <div className="img">

@@ -1,5 +1,6 @@
 /* for centering */
 .mousey {
+  z-index: 100;
   width: 3px;
   padding: 10px 15px;
   height: 30px;

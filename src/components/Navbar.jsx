@@ -3,10 +3,8 @@ import AppBar from '@material-ui/core/AppBar';
 import Box from '@material-ui/core/Box';
 import Toolbar from '@material-ui/core/Toolbar';
 import CodeRoundedIcon from '@material-ui/icons/CodeRounded';
-import { spacing } from '@material-ui/system';
 import { Typography } from '@material-ui/core';
 import HamburgerMenu from 'react-hamburger-menu';
-import Overlay from '../components/Overlay/index.js';
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -14,7 +12,7 @@ const Navbar = () => {
   return (
     <Box mb={4}>
       <AppBar
-        position="static"
+        position="absolute"
         style={{
           background: 'transparent',
           boxShadow: 'none',

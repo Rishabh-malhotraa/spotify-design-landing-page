@@ -1,16 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Navbar from '../components/Navbar';
-import BurgerII from '../components/Sidebar/Sidebar';
+// import BurgerII from '../components/Sidebar/Sidebar';
 import Deck from '../components/Deck';
 import Scroll from '../components/Scroll';
 
-import { spacing } from '@material-ui/system';
-import {
-  makeStyles,
-  withStyles,
-  createStyles,
-  Theme,
-} from '@material-ui/core/styles';
+import { makeStyles, withStyles, createStyles } from '@material-ui/core/styles';
 
 import Grid from '@material-ui/core/Grid';
 import Box from '@material-ui/core/Box';
@@ -61,6 +55,24 @@ const useStyles = makeStyles((theme) =>
         alignItems: 'center',
       },
     },
+    footer: {
+      margin: '0px',
+      position: 'absolute',
+      bottom: '0px',
+      width: '100vw',
+      '& a': {
+        color: 'rgb(255, 255, 255, 0.6)',
+      },
+      '& span': {
+        color: 'red',
+      },
+
+      padding: '1rem',
+      fontSize: '16px',
+      textAlign: 'center',
+      backgroundColor: '#3a3939',
+      color: 'rgb(255, 255, 255, 0.6)',
+    },
   })
 );
 
@@ -77,67 +89,78 @@ const LightTooltip = withStyles((theme) => ({
 const Landing = () => {
   const classes = useStyles();
   return (
-    <div className={classes.landingRoot}>
-      <Scroll />
-      <Navbar />
+    <>
+      <div className={classes.landingRoot}>
+        <Scroll />
+        <Navbar />
 
-      <br />
-      <Box p={2}>
-        <Grid
-          container
-          direction="row-reverse"
-          spacing={3}
-          alignItems="center"
-          justify="center"
-        >
-          <Grid item xs={12} md={7}>
-            <Box className={classes.deckBox}>
-              {/* <Paper elevation={4} className={classes.deck}>
-                yo
-              </Paper> */}
-              <Deck />
-            </Box>
-          </Grid>
-          <Grid item xs={12} md={4}>
-            <Paper className={classes.paper}>
-              <Typography variant="h3">PLACEHOLDER TEXT</Typography>
-            </Paper>
-          </Grid>
+        <br />
+        <Box p={2}>
           <Grid
             container
-            item
-            className={classes.iconGridContainer}
-            xs={12}
-            md={1}
+            direction="row-reverse"
+            spacing={3}
             alignItems="center"
-            spacing={2}
+            justify="center"
           >
-            <Grid item>
-              <LightTooltip
-                TransitionComponent={Zoom}
-                title="Next Post"
-                placement="right"
-              >
-                <IconButton aria-label="next">
-                  <SkipNextIcon style={{ color: 'black' }} />
-                </IconButton>
-              </LightTooltip>
+            <Grid item xs={12} md={7}>
+              <Box className={classes.deckBox}>
+                {/* <Paper elevation={4} className={classes.deck}>
+                yo
+              </Paper> */}
+                <Deck />
+              </Box>
             </Grid>
-            <Grid item>
-              <LightTooltip
-                TransitionComponent={Zoom}
-                title="Previous Post"
-                placement="right"
-              >
-                <IconButton aria-label="delete">
-                  <SkipPreviousIcon style={{ color: 'black' }} />
-                </IconButton>
-              </LightTooltip>
+            <Grid item xs={12} md={4}>
+              <Paper className={classes.paper}>
+                <Typography variant="h3">PLACEHOLDER TEXT</Typography>
+              </Paper>
+            </Grid>
+            <Grid
+              container
+              item
+              className={classes.iconGridContainer}
+              xs={12}
+              md={1}
+              alignItems="center"
+              spacing={2}
+            >
+              <Grid item>
+                <LightTooltip
+                  TransitionComponent={Zoom}
+                  title="Next Post"
+                  placement="right"
+                >
+                  <IconButton aria-label="next">
+                    <SkipNextIcon style={{ color: 'black' }} />
+                  </IconButton>
+                </LightTooltip>
+              </Grid>
+              <Grid item>
+                <LightTooltip
+                  TransitionComponent={Zoom}
+                  title="Previous Post"
+                  placement="right"
+                >
+                  <IconButton aria-label="delete">
+                    <SkipPreviousIcon style={{ color: 'black' }} />
+                  </IconButton>
+                </LightTooltip>
+              </Grid>
             </Grid>
           </Grid>
-        </Grid>
-      </Box>
-    </div>
+        </Box>
+        <p className={classes.footer}>
+          Made with <span> &#9829; </span> by Rishabh Malhotra{'  '}•{'  '}
+          <a
+            href="https://github.com/Rishabh-malhotraa/spotify-design-landing-page"
+            target="__blank"
+          >
+            Github
+          </a>
+        </p>
+      </div>
+    </>
   );
 };
 
