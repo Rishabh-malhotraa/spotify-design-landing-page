@@ -1,4 +1,4 @@
-## Inspired by Sptify Design 
+## Inspired by Spotify Design 
 
 Built with the help  [card-stack](https://www.react-spring.io/docs/hooks/use-springs) example of react-spring
 
